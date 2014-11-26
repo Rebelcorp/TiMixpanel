@@ -4,4 +4,3 @@
     <item android:state_enabled="false" android:drawable="@drawable/com_mixpanel_android_arrowright_faded" />
     <item android:drawable="@drawable/com_mixpanel_android_arrowright" />
 </selector>
-<!-- From: file:/Users/joe/Desktop/mixpanel-android/src/main/res/drawable/com_mixpanel_android_arrowright_states.xml -->

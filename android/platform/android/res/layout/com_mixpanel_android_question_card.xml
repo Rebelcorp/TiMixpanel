@@ -54,4 +54,3 @@ https://groups.google.com/forum/#!msg/android-developers/qcclW4oekVY/IeQtoAruCTg
         android:background="@android:color/transparent" android:divider="@android:color/transparent"
         android:choiceMode="singleChoice" />
 </LinearLayout>
-<!-- From: file:/Users/joe/Desktop/mixpanel-android/src/main/res/layout/com_mixpanel_android_question_card.xml -->

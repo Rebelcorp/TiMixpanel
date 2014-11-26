@@ -12,4 +12,3 @@
     android:maxLines="3"
     android:checkMark="@drawable/com_mixpanel_android_checkmark_states"
     />
-<!-- From: file:/Users/joe/Desktop/mixpanel-android/src/main/res/layout/com_mixpanel_android_first_choice_answer.xml -->

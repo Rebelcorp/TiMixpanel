@@ -89,4 +89,3 @@
             android:src="@drawable/com_mixpanel_android_logo" />
     </LinearLayout>
 </RelativeLayout>
-<!-- From: file:/Users/joe/Desktop/mixpanel-android/src/main/res/layout/com_mixpanel_android_activity_notification_full.xml -->

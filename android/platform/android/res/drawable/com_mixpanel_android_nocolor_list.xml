@@ -5,4 +5,3 @@
     <item android:state_enabled="true" android:state_focused="true" android:drawable="@color/android:transparent" />
     <item android:drawable="@color/android:transparent" />
 </selector>
-<!-- From: file:/Users/joe/Desktop/mixpanel-android/src/main/res/drawable/com_mixpanel_android_nocolor_list.xml -->

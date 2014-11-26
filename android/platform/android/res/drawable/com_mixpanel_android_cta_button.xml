@@ -3,4 +3,3 @@
    <stroke android:width="2dp" android:color="#ffffff"/>
    <corners android:radius="100dp" />
 </shape>
-<!-- From: file:/Users/joe/Desktop/mixpanel-android/src/main/res/drawable/com_mixpanel_android_cta_button.xml -->

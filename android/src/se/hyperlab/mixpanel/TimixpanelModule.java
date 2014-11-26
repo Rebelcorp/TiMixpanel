@@ -21,6 +21,8 @@ import java.util.HashMap;
 
 import com.mixpanel.android.mpmetrics.MixpanelAPI;
 
+import java.util.Iterator;
+
 @Kroll.module(name="Timixpanel", id="se.hyperlab.mixpanel")
 public class TimixpanelModule extends KrollModule
 {
@@ -42,6 +44,8 @@ public class TimixpanelModule extends KrollModule
     @Override
 	public void onPause(Activity activity)
 	{
+		Log.d(TAG, "Flushing onPause");
+
 		// This method is called when the root context is being suspended
 		mixpanel.flush();
 
@@ -52,6 +56,8 @@ public class TimixpanelModule extends KrollModule
 	@Override
 	public void onDestroy(Activity activity)
 	{
+		Log.d(TAG, "Flushing onDestroy");
+
 		// This method is called when the root context is being destroyed
 		mixpanel.flush();
 
@@ -77,8 +83,6 @@ public class TimixpanelModule extends KrollModule
 		mixpanel.getPeople().initPushHandling(senderId);
 	}
 
-
-
 	@Kroll.method
 	public void identify(@Kroll.argument String id) {
 		mixpanel.identify(id);
@@ -90,7 +94,7 @@ public class TimixpanelModule extends KrollModule
 	 public void createAlias(@Kroll.argument String alias) {
 	 	mixpanel.alias(alias, null);
 	 }
-	
+
 	 @Kroll.method
 	 public void createAliasForId(@Kroll.argument String alias, @Kroll.argument String id) {
 	 	mixpanel.alias(alias, id);
@@ -166,8 +170,20 @@ public class TimixpanelModule extends KrollModule
 		Log.d(TAG, "This function is not needed on Android");
 	}
 
+	@Kroll.method
+	public void showSurveyIfAvailable() {
+		mixpanel.getPeople().showSurveyIfAvailable(TiApplication.getAppCurrentActivity());
+	}
+
+	@Kroll.method
+	public boolean hasSurvey() {
+		return mixpanel.getPeople().getSurveyIfAvailable() != null;
+	}
+
     @Kroll.method
 	public void flush() {
+		Log.d(TAG, "Flush");
+
 		mixpanel.flush();
 	}
 
