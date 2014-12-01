@@ -15,7 +15,7 @@ Add the module to you project, the latest version of the module can be found ins
 ## Changes
 
 **0.6**
-- Added support for time tracking events on iOS. (https://mixpanel.com/blog/2014/10/27/measure-how-long-things-take-within-your-ios-app)
+- Added support for 64-bit
 
 **0.5**
 - Device tokens were not correctly send to Mixpanel, breaking Push Notification support
