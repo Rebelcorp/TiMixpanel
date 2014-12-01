@@ -3,3 +3,4 @@
     <item android:state_checked="true" android:drawable="@drawable/com_mixpanel_android_checkmark" />
     <item android:drawable="@android:color/transparent" />
 </selector>
+<!-- From: file:/Users/joe/Desktop/mixpanel-android/src/main/res/drawable/com_mixpanel_android_checkmark_states.xml -->

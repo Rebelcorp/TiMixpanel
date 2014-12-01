@@ -4,3 +4,4 @@
      android:shareInterpolator="true">
     <alpha android:fromAlpha="1.0" android:toAlpha="0.0" android:duration="200" />
 </set>
+<!-- From: file:/Users/joe/Desktop/mixpanel-android/src/main/res/anim/com_mixpanel_android_fade_out.xml -->
